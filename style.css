@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.box {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.lang-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 200px;
+}
+
+#swapBtn {
+  background: #4e54c8;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.text-area {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 50%;
+  height: 200px;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  resize: none;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #4e54c8;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#translateBtn {
+  background: #4e54c8;
+  color: white;
+}
+
+#copyBtn {
+  background: #28a745;
+  color: white;
+}
+
+#speakBtn {
+  background: #fd7e14;
+  color: white;
+}
+
+#clearBtn {
+  background: #dc3545;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+  transform: scale(1.03);
+}
